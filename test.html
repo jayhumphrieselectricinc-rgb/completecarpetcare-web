@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Carpet Care | Carpet Cleaning in Hot Springs, Arkansas</title>
+  <meta name="description" content="Complete Carpet Care provides professional carpet cleaning in Hot Springs, Arkansas, Hot Springs Village, and surrounding areas. Serving Hot Springs for 36 years with safe green cleaning, bonnet cleaning, and self-contained upright extraction." />
+  <meta name="keywords" content="carpet cleaning Hot Springs AR, carpet cleaner Hot Springs Village, carpet cleaning Hot Springs Arkansas, bonnet cleaning Hot Springs, carpet extraction Hot Springs" />
+  <style>
+    :root {
+      --blue: #0f4c81;
+      --blue-dark: #0a3558;
+      --green: #5ba83f;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --bg: #f5f8fb;
+      --white: #ffffff;
+      --border: #dbe4ec;
+      --shadow: 0 12px 30px rgba(15, 76, 129, 0.12);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--blue-dark);
+      color: #e7f2fb;
+      font-size: 14px;
+    }
+
+    .topbar .container {
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue), #1674b6);
+      color: white;
+      padding-bottom: 44px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 22px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-badge {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      background: white;
+      color: var(--blue);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: rgba(255,255,255,0.85);
+      font-size: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: white;
+      color: var(--blue-dark);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      background: transparent;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      padding: 18px 0 0;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-copy h2 {
+      font-size: clamp(36px, 6vw, 62px);
+      line-height: 1.05;
+      margin: 18px 0 14px;
+    }
+
+    .hero-copy p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+      max-width: 700px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .mini-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.08);
+      padding: 16px;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-card img {
+      border-radius: 20px;
+      width: 100%;
+      object-fit: cover;
+      background: white;
+    }
+
+    .hero-logo {
+      background: white;
+      border-radius: 24px;
+      padding: 14px;
+      margin-top: 14px;
+    }
+
+    .hero-logo img {
+      width: 100%;
+      object-fit: contain;
+      background: white;
+      border-radius: 16px;
+    }
+
+    section { padding: 72px 0; }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-title h3 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      margin: 0 0 10px;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cards-4,
+    .cards-3,
+    .faq-grid,
+    .service-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .cards-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .cards-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .service-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .faq-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(10, 53, 88, 0.06);
+    }
+
+    .card h4 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .soft { background: var(--bg); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .area-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .area-list div {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(10, 53, 88, 0.05);
+    }
+
+    .image-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+
+    .image-card img {
+      max-height: 240px;
+      width: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .review-stars {
+      color: #d59c00;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .faq-item + .faq-item { margin-top: 14px; }
+
+    .faq-item button {
+      width: 100%;
+      text-align: left;
+      border: 0;
+      background: white;
+      border-radius: 18px;
+      padding: 18px 20px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px 20px 4px;
+      color: var(--muted);
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+
+    .form-box {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-box p { color: rgba(255,255,255,0.88); }
+
+    .field {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      color: white;
+      margin-bottom: 14px;
+      font: inherit;
+    }
+
+    .field::placeholder { color: rgba(255,255,255,0.72); }
+
+    .submit-note {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      margin-top: 10px;
+    }
+
+    footer {
+      background: var(--blue-dark);
+      color: white;
+      padding: 40px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    footer p,
+    footer li {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .seo-text {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .two-col,
+      .faq-grid,
+      .footer-grid,
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .cards-3 { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .cards-4,
+      .mini-grid,
+      .area-list {
+        grid-template-columns: 1fr;
+      }
+
+      .brand h1 { font-size: 24px; }
+
+      .hero-copy p,
+      .section-title p {
+        font-size: 17px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      nav { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Serving Hot Springs, Hot Springs Village, and surrounding areas</div>
+      <div>Satisfaction Guaranteed • Free Estimates • Call for a Quote</div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="brand-badge">CCC</div>
+          <div>
+            <h1>Complete Carpet Care</h1>
+            <p>CompleteCarpetCare.org • Hot Springs, Arkansas</p>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a class="btn btn-outline" href="#services">Services</a>
+          <a class="btn btn-outline" href="#questions">Q&amp;A</a>
+          <a class="btn btn-primary" href="tel:15017672248">Call 501-767-2248</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="pill">Proudly Serving Hot Springs for 36 Years</span>
+          <h2>Professional Carpet Cleaning in Hot Springs, Arkansas</h2>
+          <p>
+            Complete Carpet Care provides safe, green carpet cleaning for homes and businesses using bonnet cleaning and self-contained upright extraction. Serving Hot Springs, Hot Springs Village, and surrounding areas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:15017672248">Call for a Quote</a>
+            <a class="btn btn-outline" href="#contact">Send a Message</a>
+          </div>
+          <div class="mini-grid">
+            <div class="mini-card">Free Estimates</div>
+            <div class="mini-card">Owner / Operator: Kerry Olson</div>
+            <div class="mini-card">Safe, Green Cleaning</div>
+            <div class="mini-card">Bonnet &amp; Upright Extraction</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-card">
+            <img src="carpet-cleaning.jpg.PNG" alt="Complete Carpet Care technician cleaning carpet in a home" />
+          </div>
+          <div class="hero-logo">
+            <img src="logo.jpg.PNG" alt="Complete Carpet Care logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <div class="section-title">
+          <div class="eyebrow">Local Experience</div>
+          <h3>Serving Hot Springs for 36 Years</h3>
+          <p>
+            Complete Carpet Care is a local carpet cleaning company serving Hot Springs, Arkansas, Hot Springs Village, and nearby communities. Owner and operator Kerry Olson provides dependable service, professional equipment, and attention to detail on every job.
+          </p>
+        </div>
+        <p class="seo-text">
+          If you are searching for carpet cleaning in Hot Springs AR, carpet cleaner in Hot Springs Village, or professional carpet cleaning in Hot Springs, Arkansas, Complete Carpet Care is ready to help.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Service Area</h4>
+        <div class="area-list">
+          <div>Hot Springs</div>
+          <div>Hot Springs Village</div>
+          <div>Lake Hamilton</div>
+          <div>Fountain Lake</div>
+          <div>Surrounding Areas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="soft">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Our Services</div>
+        <h3>Carpet Cleaning Services for Homes and Businesses</h3>
+        <p>
+          Professional carpet cleaning in Hot Springs with dependable equipment, safe green cleaning products, and proven methods.
+        </p>
+      </div>
+
+      <div class="cards-4">
+        <div class="card">
+          <h4>Carpet Cleaning</h4>
+          <p>Professional carpet cleaning that removes built-up dirt and refreshes high-traffic areas in residential and commercial spaces.</p>
+        </div>
+
+        <div class="card">
+          <h4>Bonnet Cleaning</h4>
+          <p>A fast, effective low-moisture method for maintaining carpeted areas and improving overall appearance.</p>
+        </div>
+
+        <div class="card">
+          <h4>Upright Extraction</h4>
+          <p>Self-contained upright extraction for deep cleaning and dependable results with professional-grade equipment.</p>
+        </div>
+
+        <div class="card">
+          <h4>Scotchgard Protector</h4>
+          <p>Optional carpet protection to help carpet fibers resist spills, spots, and everyday wear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <div class="section-title">
+          <div class="eyebrow">Why Choose Us</div>
+          <h3>Dependable Results with Professional Equipment</h3>
+          <p>
+            Complete Carpet Care combines local experience, professional equipment, and safe green cleaning methods to deliver consistent results.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <div class="card"><strong>36 Years Local Experience</strong></div>
+          <div class="card"><strong>Locally Owned and Operated</strong></div>
+          <div class="card"><strong>Free Estimates</strong></div>
+          <div class="card"><strong>Satisfaction Guaranteed</strong></div>
+        </div>
+      </div>
+
+      <div class="cards-3">
+        <div class="card image-card">
+          <img src="upright-machine.jpg.JPG" alt="Self contained upright extraction machine" />
+        </div>
+        <div class="card image-card">
+          <img src="carpet-cleaning.jpg.PNG" alt="Complete Carpet Care cleaning carpet in a home" />
+        </div>
+        <div class="card image-card">
+          <img src="scotchgard.jpg.jpg" alt="Scotchgard protector" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">36 Years of Local Service</div>
+        <h3>Trusted by Customers in Hot Springs and Nearby Areas</h3>
+      </div>
+
+      <div class="cards-3">
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <p>Professional, dependable, and easy to work with. The carpets looked fresh and clean when the job was done.</p>
+          <strong>Local Customer</strong>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <p>Fast response, fair pricing, and friendly service. Great experience from start to finish.</p>
+          <strong>Hot Springs Homeowner</strong>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <p>Very satisfied with the results. The cleaning made a big difference in the look of the carpet.</p>
+          <strong>Area Resident</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="container faq-grid">
+      <div>
+        <div class="section-title">
+          <div class="eyebrow">Questions &amp; Answers</div>
+          <h3>Common Questions from Customers</h3>
+          <p>
+            These answers help customers understand what Complete Carpet Care offers in Hot Springs, Arkansas.
+          </p>
+        </div>
+
+        <div class="faq-item active">
+          <button type="button">How do I get a quote?</button>
+          <div class="faq-answer">Call Complete Carpet Care at 501-767-2248 or 501-609-3671 for a free estimate.</div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button">What areas do you serve?</button>
+          <div class="faq-answer">We proudly serve Hot Springs, Hot Springs Village, and surrounding areas.</div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button">What cleaning methods do you use?</button>
+          <div class="faq-answer">We use safe, green cleaning with bonnet cleaning and self-contained upright extraction methods.</div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button">Do you offer free estimates?</button>
+          <div class="faq-answer">Yes. Free estimates are available. Just call for a quote.</div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button">Do you provide Scotchgard protector?</button>
+          <div class="faq-answer">Yes. Optional Scotchgard protector can be offered to help protect carpet fibers from spills and wear.</div>
+        </div>
+      </div>
+
+      <div id="contact" class="form-box">
+        <div class="eyebrow" style="color:#d9f0ff;">Have a Question?</div>
+        <h3 style="margin-top:0; font-size:34px; line-height:1.1;">Send Us a Message</h3>
+        <p>Use this section for contact by email. For free hosting, the simplest version is a mail link plus your phone numbers.</p>
+
+        <form action="mailto:Kjolson79@gmail.com" method="post" enctype="text/plain">
+          <input class="field" type="text" name="name" placeholder="Your name" />
+          <input class="field" type="tel" name="phone" placeholder="Phone number" />
+          <input class="field" type="email" name="email" placeholder="Email address" />
+          <textarea class="field" name="question" rows="6" placeholder="Type your question here"></textarea>
+          <button class="btn btn-primary" type="submit">Submit Question</button>
+        </form>
+
+        <div class="submit-note">
+          This opens the visitor's email app. Later, this can be replaced with a free contact form service.
+        </div>
+
+        <p>
+          <strong>Office:</strong> <a href="tel:15017672248">501-767-2248</a><br />
+          <strong>Cell:</strong> <a href="tel:15016093671">501-609-3671</a><br />
+          <strong>Email:</strong> <a href="mailto:Kjolson79@gmail.com">Kjolson79@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 style="margin-top:0;">Complete Carpet Care</h3>
+        <p>Satisfaction Guaranteed<br />Proudly serving Hot Springs for 36 years</p>
+        <p>CompleteCarpetCare.org</p>
+      </div>
+
+      <div>
+        <h4>Service Area</h4>
+        <p>Hot Springs<br />Hot Springs Village<br />Surrounding Areas</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Owner / Operator: Kerry Olson<br />Office: 501-767-2248<br />Cell: 501-609-3671<br />Email: Kjolson79@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item button').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html> by
