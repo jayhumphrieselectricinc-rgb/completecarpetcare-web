@@ -242,7 +242,8 @@
     .cards-4,
     .cards-3,
     .faq-grid,
-    .service-grid {
+    .service-grid,
+    .before-after-grid {
       display: grid;
       gap: 20px;
     }
@@ -251,6 +252,7 @@
     .cards-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
     .service-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .faq-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+    .before-after-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
 
     .card {
       background: white;
@@ -307,6 +309,18 @@
       width: auto;
       object-fit: contain;
       margin: 0 auto;
+    }
+
+    .before-after-card img {
+      width: 100%;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 20px rgba(10, 53, 88, 0.05);
+    }
+
+    .before-after-card h4 {
+      margin: 16px 0 8px;
+      font-size: 20px;
     }
 
     .review-stars {
@@ -401,7 +415,8 @@
       }
 
       .cards-4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
-      .cards-3 { grid-template-columns: 1fr; }
+      .cards-3,
+      .before-after-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 640px) {
@@ -465,16 +480,13 @@
           </div>
           <div class="mini-grid">
             <div class="mini-card">Free Estimates</div>
-            <div class="mini-card">Owner / Operator: Kerry Olson</div>
+            <div class="mini-card">Owner / Operator: Kerry Olson<br />Email: <a href="mailto:Kerry@completecarpetcare.org">Kerry@completecarpetcare.org</a></div>
             <div class="mini-card">Safe, Green Cleaning</div>
             <div class="mini-card">Bonnet &amp; Upright Extraction</div>
           </div>
         </div>
 
         <div>
-          <div class="hero-card">
-            <img src="carpet-cleaning.jpg.PNG" alt="Complete Carpet Care technician cleaning carpet in a home" />
-          </div>
           <div class="hero-logo">
             <img src="logo.jpg.PNG" alt="Complete Carpet Care logo" />
           </div>
@@ -506,6 +518,38 @@
           <div>Lake Hamilton</div>
           <div>Fountain Lake</div>
           <div>Surrounding Areas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Before &amp; After Results</div>
+        <h3>See the Difference Professional Cleaning Makes</h3>
+        <p>
+          Real before and after carpet cleaning results from Complete Carpet Care.
+        </p>
+      </div>
+
+      <div class="before-after-grid">
+        <div class="card before-after-card">
+          <img src="IMG_4918.jpeg" alt="Before and after carpet cleaning result one" />
+          <h4>Before &amp; After Result 1</h4>
+          <p>Notice the dramatic improvement in brightness and cleanliness.</p>
+        </div>
+
+        <div class="card before-after-card">
+          <img src="IMG_4919.jpeg" alt="Before and after carpet cleaning result two" />
+          <h4>Before &amp; After Result 2</h4>
+          <p>Deep cleaning restored the carpet’s original appearance.</p>
+        </div>
+
+        <div class="card before-after-card">
+          <img src="IMG_4923.jpeg" alt="Before and after carpet cleaning result three" />
+          <h4>Before &amp; After Result 3</h4>
+          <p>Professional cleaning removed heavy traffic wear and dirt.</p>
         </div>
       </div>
     </div>
@@ -649,7 +693,7 @@
         <h3 style="margin-top:0; font-size:34px; line-height:1.1;">Send Us a Message</h3>
         <p>Use this section for contact by email. For free hosting, the simplest version is a mail link plus your phone numbers.</p>
 
-        <form action="mailto:Kjolson79@gmail.com" method="post" enctype="text/plain">
+        <form action="mailto:Kerry@completecarpetcare.org" method="post" enctype="text/plain">
           <input class="field" type="text" name="name" placeholder="Your name" />
           <input class="field" type="tel" name="phone" placeholder="Phone number" />
           <input class="field" type="email" name="email" placeholder="Email address" />
@@ -664,7 +708,7 @@
         <p>
           <strong>Office:</strong> <a href="tel:15017672248">501-767-2248</a><br />
           <strong>Cell:</strong> <a href="tel:15016093671">501-609-3671</a><br />
-          <strong>Email:</strong> <a href="mailto:Kjolson79@gmail.com">Kjolson79@gmail.com</a>
+          <strong>Email:</strong> <a href="mailto:Kerry@completecarpetcare.org">Kerry@completecarpetcare.org</a>
         </p>
       </div>
     </div>
@@ -685,7 +729,7 @@
 
       <div>
         <h4>Contact</h4>
-        <p>Owner / Operator: Kerry Olson<br />Office: 501-767-2248<br />Cell: 501-609-3671<br />Email: Kjolson79@gmail.com</p>
+        <p>Owner / Operator: Kerry Olson<br />Email: <a href="mailto:Kerry@completecarpetcare.org">Kerry@completecarpetcare.org</a><br />Office: 501-767-2248<br />Cell: 501-609-3671</p>
       </div>
     </div>
   </footer>
